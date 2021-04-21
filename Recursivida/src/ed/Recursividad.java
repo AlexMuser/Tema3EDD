@@ -150,4 +150,36 @@ public class Recursividad
         }else
             System.out.println(cadena.charAt(n));
     }
+    
+    /**
+     * Metodo para realizar un conteo de numeros pares
+     *
+     * @param arr arreglo
+     * @param i indice
+     */
+    public int numerosParesArr(int[] arr, int i)
+    {
+        if (i<0)
+            return 0;
+        if (arr[i]%2==0)
+            return numerosParesArr(arr, i-1) + 1;
+        else
+            return numerosParesArr(arr, i-1);
+    }
+    
+    /**
+     * Metodo para realizar la suma de pares de un arreglo
+     *
+     * @param arr arreglo
+     * @param i indice
+     */
+    public int numerosParesArrSuma(int[] arr, int i)
+    {
+        if (i<0)
+            return 0;
+        if (arr[i]%2==0)
+            return arr[i] + numerosParesArrSuma(arr, i-1);
+        else
+            return numerosParesArrSuma(arr, i-1);
+    }
 }

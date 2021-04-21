@@ -23,7 +23,7 @@ public class PrbRecursivo
         Recursividad obj = new Recursividad();
         boolean llave = true;
         int x;
-        int arr[] = {5,4,3,2,1};
+        int arr[] = {5,4,3,2,1,4,4};
         int num;
         do
         {
@@ -37,7 +37,9 @@ public class PrbRecursivo
                     + "7.Multiplicacion por suma\n"
                     + "8.Busqueda de un numero en un vector\n"
                     + "9.Desplegar una cadena\n"
-                    + "10.Salir");
+                    + "10.Total de numeros pares\n"
+                    + "11.Suma de numeros pares\n"
+                    + "12.Salir");
             System.out.println("Escoga la opcion");
             int opc = sc.nextInt();
             switch (opc)
@@ -97,6 +99,12 @@ public class PrbRecursivo
                     obj.despCadenaRecur("perro", "perro".length()-1);
                     break;
                 case 10:
+                    System.out.println("El total de numeros pares del arreglo es " + obj.numerosParesArr(arr, arr.length-1));
+                    break;
+                case 11:
+                    System.out.println("La suma de los pares en el arreglo es " + obj.numerosParesArrSuma(arr, arr.length-1));
+                    break;
+                case 12:
                     llave = false;
                     break;
                 default:
