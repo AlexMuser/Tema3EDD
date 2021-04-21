@@ -182,4 +182,41 @@ public class Recursividad
         else
             return numerosParesArrSuma(arr, i-1);
     }
+    
+    public void contadorMonedas(int dinero, int mon20, int mon10, int mon5, int mon1)
+    {
+        if (dinero/1>0)
+        {
+            if (dinero/5>0)
+            {
+                if (dinero/10>0)
+                {
+                    if (dinero/20>0)
+                    {
+                        mon20++;
+                        contadorMonedas(dinero-20, mon20, mon10, mon5, mon1);
+                    } else
+                    {
+                        mon10++;
+                        contadorMonedas(dinero-10, mon20, mon10, mon5, mon1);
+                    }
+                }else
+                {
+                 mon5++;
+                 contadorMonedas(dinero-5, mon20, mon10, mon5, mon1);   
+                }
+            }
+            else
+            {
+                mon1++;
+                contadorMonedas(dinero-1, mon20, mon10, mon5, mon1);
+            }
+        }else
+        {
+            System.out.println("Monedas de 20 = " + mon20);
+            System.out.println("Monedas de 10 = " + mon10);
+            System.out.println("Monedas de 5 = " + mon5);
+            System.out.println("Monedas de 1 = " + mon1);
+        }
+    }
 }

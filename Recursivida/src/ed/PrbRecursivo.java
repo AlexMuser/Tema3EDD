@@ -39,7 +39,8 @@ public class PrbRecursivo
                     + "9.Desplegar una cadena\n"
                     + "10.Total de numeros pares\n"
                     + "11.Suma de numeros pares\n"
-                    + "12.Salir");
+                    + "12.Contador de monedas\n"
+                    + "13.Salir");
             System.out.println("Escoga la opcion");
             int opc = sc.nextInt();
             switch (opc)
@@ -105,6 +106,9 @@ public class PrbRecursivo
                     System.out.println("La suma de los pares en el arreglo es " + obj.numerosParesArrSuma(arr, arr.length-1));
                     break;
                 case 12:
+                    obj.contadorMonedas(257, 0, 0, 0, 0);
+                    break;
+                case 13:
                     llave = false;
                     break;
                 default:
