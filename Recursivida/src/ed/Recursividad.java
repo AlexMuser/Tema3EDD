@@ -130,7 +130,6 @@ public class Recursividad
         if (arr[i] == numBusq)
             return i;
         return busqDatoVector(arr, i - 1, numBusq);
-        
     }
     
     /**
@@ -144,9 +143,9 @@ public class Recursividad
         if (n>0)
         {
             despCadenaRecur(cadena, n-1);
-            System.out.println(cadena.charAt(n));
+            System.out.print(cadena.charAt(n));
         }else
-            System.out.println(cadena.charAt(n));
+            System.out.print(cadena.charAt(n));
     }
     
     /**
