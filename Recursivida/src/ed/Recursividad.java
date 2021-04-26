@@ -170,14 +170,14 @@ public class Recursividad
      * @param arr arreglo
      * @param i indice
      */
-    public int numerosParesArrSuma(int[] arr, int i)
+    public int numerosParesArrMult(int[] arr, int i)
     {
         if (i<0)
-            return 0;
+            return 1;
         if (arr[i]%2==0)
-            return arr[i] + numerosParesArrSuma(arr, i-1);
+            return arr[i] * numerosParesArrMult(arr, i-1);
         else
-            return numerosParesArrSuma(arr, i-1);
+            return numerosParesArrMult(arr, i-1);
     }
     
     public void contadorMonedas(int dinero, int mon20, int mon10, int mon5, int mon1)
@@ -210,6 +210,7 @@ public class Recursividad
             }
         }else
         {
+            System.out.println("El total de monedas = " + (mon1+mon5+mon10+mon20));
             System.out.println("Monedas de 20 = " + mon20);
             System.out.println("Monedas de 10 = " + mon10);
             System.out.println("Monedas de 5 = " + mon5);

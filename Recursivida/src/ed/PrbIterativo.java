@@ -40,7 +40,7 @@ public class PrbIterativo
                     + "8.Busqueda de un numero en un vector\n"
                     + "9.Desplegar una cadena\n"
                     + "10.Total de numeros pares\n"
-                    + "11.Suma de numeros pares\n"
+                    + "11.Multiplicación de numeros pares\n"
                     + "12.Contador de monedas\n"
                     + "13.Salir");
             System.out.println("Escoga la opcion");
@@ -108,7 +108,7 @@ public class PrbIterativo
                     System.out.println("El total de numeros pares del arreglo es " + obj2.numerosParesArr(arr));
                     break;
                 case 11:
-                    System.out.println("La suma de los pares en el arreglo es " + obj2.numerosParesArrSuma(arr));
+                    System.out.println("La suma de los pares en el arreglo es " + obj2.numerosParesArrMult(arr));
                     break;
                 case 12:
                     System.out.println("Ingrese el monto");

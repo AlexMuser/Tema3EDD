@@ -118,20 +118,20 @@ public class Iterativos
         return cont;
     }
 
-    public int numerosParesArrSuma(int[] arr)
+    public int numerosParesArrMult(int[] arr)
     {
-        int suma = 0;
+        int mult = 1;
         if (arr != null)
         {
             for (int i = 0; i < arr.length; i++)
             {
                 if (arr[i] % 2 == 0)
                 {
-                    suma += arr[i];
+                    mult *= arr[i];
                 }
             }
         }
-        return suma;
+        return mult;
     }
 
     public void contadorMonedas(int dinero, int mon20, int mon10, int mon5, int mon1)
@@ -166,6 +166,7 @@ public class Iterativos
             }
         } while (dinero > 0);
 
+        System.out.println("El total de monedas es = " + (mon20+mon10+mon5+mon1));
         System.out.println("Monedas de 20 = " + mon20);
         System.out.println("Monedas de 10 = " + mon10);
         System.out.println("Monedas de 5 = " + mon5);
