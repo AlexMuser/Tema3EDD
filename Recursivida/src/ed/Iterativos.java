@@ -101,7 +101,7 @@ public class Iterativos
     {
         for (int i = 0; i < cadena.length(); i++)
         {
-            System.out.print(cadena.charAt(i) + " ");
+            System.out.print(cadena.charAt(i));
         }
     }
 

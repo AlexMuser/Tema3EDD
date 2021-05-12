@@ -101,9 +101,7 @@ public class PrbIterativo
                         System.out.println("Dato no encontrado");
                     break;
                 case 9:
-                    System.out.println("Ingrese la cadena");
-                    String cadena = sc.next();
-                    obj2.despCadenaRecur(cadena);
+                    obj2.despCadenaRecur("perro");
                     System.out.println("");
                     break;
                 case 10:
