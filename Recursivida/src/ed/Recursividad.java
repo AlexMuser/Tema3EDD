@@ -143,9 +143,9 @@ public class Recursividad
         if (n>0)
         {
             despCadenaRecur(cadena, n-1);
-            System.out.print(cadena.charAt(n));
+            System.out.print(cadena.charAt(n) + " ");
         }else
-            System.out.print(cadena.charAt(n));
+            System.out.print(cadena.charAt(n) + " ");
     }
     
     /**

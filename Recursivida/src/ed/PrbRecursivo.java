@@ -97,7 +97,10 @@ public class PrbRecursivo
                         System.out.println("Dato no encontrado");
                     break;
                 case 9:
-                    obj.despCadenaRecur("perro", "perro".length()-1);
+                    System.out.println("Ingrese la cadena");
+                    String cadena = sc.next();
+                    obj.despCadenaRecur(cadena, cadena.length()-1);
+                    System.out.println("");
                     break;
                 case 10:
                     System.out.println("El total de numeros pares del arreglo es " + obj.numerosParesArr(arr, arr.length-1));
